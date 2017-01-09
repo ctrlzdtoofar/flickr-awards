@@ -321,7 +321,7 @@ static NSString * const kAccessTokenURL   = @"http://www.flickr.com/services/oau
 }
 
 /*
-fullname=Heather%20Stevens&oauth_token=72157628865866341-fbc415f68c67449a&oauth_token_secret=133da1e1276c0265&user_nsid=59195110%40N02&username=Heather92115
+fullname=Heather%20Stevens&oauth_token=****************&oauth_token_secret=***************&user_nsid=*********%40N02&username=****************
  */
 // Parse the response to the request token.
 - (BOOL)parseAccessTokenResponse:(NSString *)sResponse {   
