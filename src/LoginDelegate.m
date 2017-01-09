@@ -59,13 +59,13 @@ static NSString * const kRequestTokenURL    = @"http://www.flickr.com/services/o
 static NSString * const kFirstParamDelim    = @"?";
 static NSString * const kParamDelim         = @"&";
 static NSString * const kCallBack           = @"oauth_callback=FlickrAwards%3A%2F%2Foauthlogin";
-static NSString * const kConsumerKey        = @"oauth_consumer_key=5ba9a0182068c1193f16d5826570b5fa";
+static NSString * const kConsumerKey        = @"oauth_consumer_key=****************************";
 static NSString * const kNonceLabel         = @"&oauth_nonce=";
 static NSString * const kTimeStampLabel     = @"&oauth_timestamp=";
 static NSString * const kVersion            = @"&oauth_version=1.0";
 static NSString * const kSignature          = @"&oauth_signature=";
 static NSString * const kSigMethod          = @"&oauth_signature_method=HMAC-SHA1";
-static NSString * const kFlckrSecretKey     = @"b25999f1bde04dd4&";
+static NSString * const kFlckrSecretKey     = @"*********************&";
 
 static NSString * const kConfirmedTrue          = @"oauth_callback_confirmed=true";
 static NSString * const kOauthTokenLabel        = @"oauth_token";
