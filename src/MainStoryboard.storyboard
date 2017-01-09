@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="NFs-vs-TGc">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Flckr View Controller - Login-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="loginControllerId" title="Login" id="2" customClass="FlckrViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="3A1-X6-1rF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome to FlickrAwards" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="Nt3-5s-vhA">
+                                        <rect key="frame" x="30" y="90" width="252" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u1Y-rX-3sK">
+                                        <rect key="frame" x="84" y="163" width="145" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Flickr.com Login">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startLoginProcess:" destination="2" eventType="touchUpInside" id="iAI-ly-ITz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="dx6-lq-GuJ">
+                        <barButtonItem key="backBarButtonItem" title="New Login" id="AJW-Xb-DaJ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginView" destination="3A1-X6-1rF" id="jWe-uD-xg3"/>
+                        <segue destination="7PY-gd-SMr" kind="push" identifier="toHomeSegue" id="CDs-Jt-Bfv"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="938" y="-310"/>
+        </scene>
+        <!--Home View Controller - Home Title-->
+        <scene sceneID="Sxr-zc-3uK">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8g-bW-7Ko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="homeId" title="Home Title" id="7PY-gd-SMr" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" tag="101" contentMode="scaleToFill" id="Lc2-zv-JEz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" text="Welcome" lineBreakMode="tailTruncation" minimumFontSize="10" id="7x1-2h-BPY">
+                                <rect key="frame" x="20" y="73" width="170" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z1P-gR-epy">
+                                <rect key="frame" x="70" y="123" width="181" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Quick Pics">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LEE-MB-A9f" kind="push" identifier="Quick Pics" id="Pbv-qv-TAD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XPR-MQ-9Sq">
+                                <rect key="frame" x="70" y="185" width="181" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Group Award Setup">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rs4-Uz-32i" kind="push" identifier="Group Award Setup" id="tX0-8q-wn6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="vzd-d4-hEc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="groupSetupButton" destination="XPR-MQ-9Sq" id="II4-F3-Kn5"/>
+                        <outlet property="quickPicksButton" destination="z1P-gR-epy" id="QD3-Yt-wkq"/>
+                        <outlet property="welcomeLabel" destination="7x1-2h-BPY" id="353-8H-MG2"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1385" y="-314"/>
+        </scene>
+        <!--Edit Award View Controller - Group Award-->
+        <scene sceneID="cEG-aB-sBf">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwA-dM-xw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Group Award" id="nVN-rx-dWE" customClass="EditAwardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fsI-hm-LUc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Award html text goes here." id="HRc-iB-XWh">
+                                <rect key="frame" x="20" y="9" width="280" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80951074300000003" green="0.94490407899999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.57653061224489788" green="0.57653061224489788" blue="0.57653061224489788" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q6b-9C-TNd">
+                                <rect key="frame" x="20" y="189" width="105" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Auto Grab">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="attemptAutoCreate:" destination="nVN-rx-dWE" eventType="touchUpInside" id="Dfx-xU-lcs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d5J-16-NbH">
+                                <rect key="frame" x="20" y="234" width="148" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Group Web Page">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="groupWebPageButtonPressed:" destination="nVN-rx-dWE" eventType="touchUpInside" id="3vZ-bi-rMl"/>
+                                    <segue destination="COr-LX-4rc" kind="push" identifier="Group Web Page" id="XX8-B9-tzg"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" id="sHJ-qj-36b">
+                                <rect key="frame" x="225" y="196" width="60" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Required Awards:" lineBreakMode="tailTruncation" minimumFontSize="10" id="kvR-DO-GUG">
+                                <rect key="frame" x="74" y="293" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" id="gYf-Ge-3As">
+                                <rect key="frame" x="150" y="125" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Group Award" id="3KY-nb-Dhy"/>
+                    <connections>
+                        <outlet property="autoGrabButton" destination="q6b-9C-TNd" id="ig0-3S-3MK"/>
+                        <outlet property="awardsRequiredPickerView" destination="sHJ-qj-36b" id="8k9-aD-eHq"/>
+                        <outlet property="busyIndicatorView" destination="gYf-Ge-3As" id="k0N-Ho-zGN"/>
+                        <outlet property="editAwardTextView" destination="HRc-iB-XWh" id="4c7-CE-My7"/>
+                        <outlet property="groupWebPageButton" destination="d5J-16-NbH" id="uMc-Jg-dXu"/>
+                        <outlet property="requiredAwardsLabel" destination="kvR-DO-GUG" id="e0s-Kk-0S1"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1976" y="338"/>
+        </scene>
+        <!--Group Web Page View Controller-->
+        <scene sceneID="gYL-FA-D0I">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLE-tD-zRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="COr-LX-4rc" customClass="GroupWebPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PXj-tr-NLo">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" id="xve-OB-Uh7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" id="kUy-kx-n17">
+                                <rect key="frame" x="150" y="193" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ymz-Tf-44B"/>
+                    <connections>
+                        <outlet property="busyIndicatorView" destination="kUy-kx-n17" id="xUc-Uk-Il1"/>
+                        <outlet property="groupWebPageView" destination="xve-OB-Uh7" id="SbF-aw-7gA"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2460" y="338"/>
+        </scene>
+        <!--Awards View Controller - Group Award-->
+        <scene sceneID="eE6-Ps-EYC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hg2-Td-UOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="y1h-kK-3A8" customClass="AwardsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cCB-mL-u9x">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="Group:" lineBreakMode="tailTruncation" minimumFontSize="10" id="bXS-Kq-B6z">
+                                <rect key="frame" x="20" y="10" width="292" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" id="lFI-dk-5ot">
+                                <rect key="frame" x="150" y="100" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <webView multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" id="FUS-ad-i6h">
+                                <rect key="frame" x="8" y="71" width="304" height="288"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="y1h-kK-3A8" id="9mh-lN-dC6"/>
+                                </connections>
+                            </webView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Awards Required to Add Photo:" lineBreakMode="tailTruncation" minimumFontSize="10" id="aef-Yh-JoV">
+                                <rect key="frame" x="20" y="42" width="252" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Group Award" id="z6A-9Y-fmK">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="E7D-we-tGo">
+                            <connections>
+                                <segue destination="nVN-rx-dWE" kind="custom" identifier="Edit Create Award" customClass="EditAwardCustomSegue" id="Uim-kS-Uvz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityInd" destination="lFI-dk-5ot" id="6CW-Ba-gJ4"/>
+                        <outlet property="awardEditButton" destination="E7D-we-tGo" id="dk7-hU-HOR"/>
+                        <outlet property="awardWebView" destination="FUS-ad-i6h" id="iqj-uC-tAL"/>
+                        <outlet property="awardsRequiredLabel" destination="aef-Yh-JoV" id="BqQ-S0-EjB"/>
+                        <outlet property="groupNameLabel" destination="bXS-Kq-B6z" id="LwT-Ic-aBt"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1471" y="338"/>
+        </scene>
+        <!--Award Group Photos View Controller - Award Group Photos-->
+        <scene sceneID="xbA-XS-Lki">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBz-OK-FrT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ACr-NK-Kvf" customClass="AwardGroupPhotosViewController" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="cV5-VR-9lS">
+                        <rect key="frame" x="0.0" y="94" width="320" height="337"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="black" minimumZoomScale="0.80000000000000004" maximumZoomScale="1.5" id="J8q-FZ-jPk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="337"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" animating="YES" style="whiteLarge" id="Pxv-aT-bo4">
+                                        <rect key="frame" x="142" y="150" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No Photos To Award" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="9da-iS-CPZ">
+                                        <rect key="frame" x="43" y="79" width="227" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.99942219259999998" green="0.03347014157" blue="0.066012501740000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.99942219259999998" green="0.03347014157" blue="0.066012501740000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="shadowColor" red="1" green="0.32482356471484908" blue="0.27051118883163483" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Awarded" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="12" id="S45-1t-k5R">
+                                        <rect key="frame" x="97" y="35" width="126" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5N7-Dl-0J0" appends="YES" id="rJv-gh-nLf"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Award Group Photos" prompt="Tap to Award, Swiping Skips" id="62L-bd-Mgx"/>
+                    <connections>
+                        <outlet property="awardedLabel" destination="S45-1t-k5R" id="gWj-RM-HJq"/>
+                        <outlet property="busyIndicatorView" destination="Pxv-aT-bo4" id="WMw-ew-kAP"/>
+                        <outlet property="groupPhotoListScrollView" destination="J8q-FZ-jPk" id="rNP-6i-SGM"/>
+                        <outlet property="leftSwipegestureRecognizer" destination="v6d-zR-J72" id="7tU-fo-fPi"/>
+                        <outlet property="noPhotosLabel" destination="9da-iS-CPZ" id="nor-u3-cBp"/>
+                        <outlet property="rightSwipGestureRecognizer" destination="WUB-XP-JCN" id="8uG-XH-8kk"/>
+                        <outlet property="tapGuestureRecognizer" destination="5N7-Dl-0J0" id="n01-rd-Yy3"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer id="5N7-Dl-0J0">
+                    <connections>
+                        <action selector="handleTapFrom:" destination="ACr-NK-Kvf" id="Xhm-VS-ZAg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="WUB-XP-JCN">
+                    <connections>
+                        <action selector="handleRightSwipeFrom:" destination="ACr-NK-Kvf" id="lyL-1f-HbX"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="v6d-zR-J72">
+                    <connections>
+                        <action selector="handleLeftSwipeFrom:" destination="ACr-NK-Kvf" id="8Xe-Cm-CnP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3221" y="-310"/>
+        </scene>
+        <!--Pick Photo Table View Controller - Select Photo-->
+        <scene sceneID="4w3-MY-psM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDB-oe-QED" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="selectPhotoViewController" title="Select Photo" id="LEE-MB-A9f" customClass="PickPhotoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1C4-kS-xBB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" id="3lA-gB-0Fw">
+                            <rect key="frame" x="0.0" y="66" width="320" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo Picker Cell" id="ZUY-RK-UGK" userLabel="smallPhotoCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES" staticText="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue destination="WP4-Yc-sfh" kind="push" identifier="Display Photo" id="Eah-yv-CnW"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LEE-MB-A9f" id="EQW-6t-1l8"/>
+                            <outlet property="delegate" destination="LEE-MB-A9f" id="4gE-5N-hSR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select Photo" id="PFH-sA-OO5"/>
+                    <connections>
+                        <outlet property="busyIndicator" destination="3lA-gB-0Fw" id="flz-kg-MQk"/>
+                        <outlet property="photoTable" destination="1C4-kS-xBB" id="0Vx-sE-jhX"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1906" y="-314"/>
+        </scene>
+        <!--Photo View Controller - Photo View-->
+        <scene sceneID="Jpo-LL-V5M">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhZ-ul-aPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="WP4-Yc-sfh" customClass="PhotoViewController" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="cgC-Gt-7Lv">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="black" canCancelContentTouches="NO" minimumZoomScale="0.80000000000000004" maximumZoomScale="1.5" bouncesZoom="NO" id="0kG-aG-udh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="HZm-oS-yzW">
+                                        <rect key="frame" x="142" y="165" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                    <view contentMode="scaleToFill" id="u5t-VC-V7x">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="0IX-Td-ySQ">
+                                                <rect key="frame" x="20" y="12" width="287" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jmd-0k-5cs" appends="YES" id="dfh-Sn-c9m"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photo View" id="WAc-iK-lJW">
+                        <barButtonItem key="rightBarButtonItem" title="Use" id="xjw-Gf-dg9">
+                            <connections>
+                                <segue destination="RnZ-4Q-qNa" kind="push" identifier="Select Group for Photo" id="LUg-E8-W3H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="busyIndicatorView" destination="HZm-oS-yzW" id="6XN-10-rMe"/>
+                        <outlet property="scrollView" destination="0kG-aG-udh" id="Gad-bq-usL"/>
+                        <outlet property="titleLabel" destination="0IX-Td-ySQ" id="v4Y-vB-ZEN"/>
+                        <outlet property="titleView" destination="u5t-VC-V7x" id="bdw-Eh-EtH"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer id="jmd-0k-5cs">
+                    <connections>
+                        <action selector="resizePhotoPerTapGesture:" destination="WP4-Yc-sfh" id="V5l-kF-wnx"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2356" y="-314"/>
+        </scene>
+        <!--Pick Group Table View Controller - Select Group-->
+        <scene sceneID="ttu-QK-pse">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mp-qO-Tky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="Select Group" id="rs4-Uz-32i" customClass="PickGroupTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Fku-FB-kOF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" id="OOf-i9-F3i">
+                            <rect key="frame" x="0.0" y="66" width="320" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Group Picker Cell" id="UaP-nH-15q">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" staticText="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue destination="y1h-kK-3A8" kind="push" identifier="Group Awards" id="2Wc-Hv-qxY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rs4-Uz-32i" id="xXR-HT-XkS"/>
+                            <outlet property="delegate" destination="rs4-Uz-32i" id="ssk-rN-CLL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select Group" id="wS4-bL-op2"/>
+                    <connections>
+                        <outlet property="busyIndicator" destination="OOf-i9-F3i" id="idk-ah-hEp"/>
+                        <outlet property="selectGroupTable" destination="Fku-FB-kOF" id="YcT-Yd-Ngz"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1002" y="338"/>
+        </scene>
+        <!--Flickr1 Navigation Controller - Nav Controller-->
+        <scene sceneID="9gS-rF-RAe">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jPW-CE-kHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="navControllerId" title="Nav Controller" id="NFs-vs-TGc" customClass="Flickr1NavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="x5n-Ut-UgO"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="36" contentMode="scaleToFill" id="aDG-IG-Q3a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="A64-U4-O77"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="516" y="-314"/>
+        </scene>
+        <!--Pick Group Table View Controller - Select Group-->
+        <scene sceneID="Gmp-0l-IQW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6B-B9-oGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="Select Group" id="RnZ-4Q-qNa" customClass="PickGroupTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="anm-62-N5Z">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" id="edc-Kf-Xyx">
+                            <rect key="frame" x="0.0" y="66" width="320" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Group Picker Cell" id="TAw-mW-wrq">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" staticText="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue destination="ACr-NK-Kvf" kind="push" id="2iA-oH-gml"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RnZ-4Q-qNa" id="FSg-Zk-leC"/>
+                            <outlet property="delegate" destination="RnZ-4Q-qNa" id="FlY-y0-Zp6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select Group" id="Eqo-7V-K5L"/>
+                    <connections>
+                        <outlet property="busyIndicator" destination="edc-Kf-Xyx" id="yG5-wn-BOF"/>
+                        <outlet property="selectGroupTable" destination="anm-62-N5Z" id="0LL-RU-fJK"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="2798" y="-310"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AwardGroupPhotosViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AwardGroupPhotosViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="handleLeftSwipeFrom:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="handleRightSwipeFrom:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="handleTapFrom:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="outlet" name="awardedLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="busyIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="groupPhotoListScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="leftSwipegestureRecognizer" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="noPhotosLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rightSwipGestureRecognizer" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="tapGuestureRecognizer" candidateClass="UITapGestureRecognizer"/>
+            </relationships>
+        </class>
+        <class className="AwardsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AwardsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityInd" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="awardEditButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="awardWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="awardsRequiredLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="groupNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="EditAwardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditAwardViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="autoGrabButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="awardsRequiredPickerView" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="busyIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="editAwardTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="groupWebPageButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="requiredAwardsLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FlckrViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlckrViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="loginView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="Flickr1NavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Flickr1NavigationController.h"/>
+        </class>
+        <class className="GroupWebPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupWebPageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="busyIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="groupWebPageView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="groupSetupButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="quickPicksButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="welcomeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PhotoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="busyIndicatorView" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="PickGroupTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickGroupTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="busyIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="selectGroupTable" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="PickPhotoTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickPhotoTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="busyIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="photoTable" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
