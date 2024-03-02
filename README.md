@@ -1,5 +1,8 @@
 # flickr-awards
 
+### Archiving 
+This project is only kept for historical purposes.
+
 ### Information
 
 FlickrAwards iPhone/iPod iOS 5 App
